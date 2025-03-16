@@ -1,0 +1,57 @@
+{
+  "name": "electron-todo-app",
+  "version": "1.0.0",
+  "description": "A modern, glassy todo app with global shortcut",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "author": {
+    "name": "Manish Tirkey"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.6",
+    "electron-store": "^8.1.0"
+  },
+  "build": {
+    "appId": "com.electron.todo-app",
+    "productName": "Todo App",
+    "copyright": "copyright  © 2025 by Manish Tirkey ",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icons/icon.ico",
+      "publisherName": "Manish Tirkey"
+    },
+    "nsis": {
+      "runAfterFinish": true,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": true,
+      "shortcutName": "To-do App",
+      "oneClick": false,
+      "installerIcon": "assets/icons/icon.ico",
+      "installerHeaderIcon": "assets/icons/icon.ico",
+      "uninstallerIcon": "assets/icons/icon.ico",
+      "uninstallDisplayName": "To-do App",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icons/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icons/icon.png"
+    }
+  }
+}

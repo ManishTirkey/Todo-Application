@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassy Todo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Today's Tasks</h1>
+        <div class="drag-area"></div>
+      </div>
+
+      <div class="tasks-container">
+        <div id="tasks-list">
+          <!-- Tasks will be added here dynamically -->
+        </div>
+      </div>
+
+      <div class="add-task-form">
+        <input
+          type="text"
+          id="new-task-input"
+          placeholder="Add a new task..."
+        />
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

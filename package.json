@@ -11,7 +11,17 @@
   "author": {
     "name": "Manish Tirkey"
   },
+  "keywords": [
+    "Todo",
+    "To-do",
+    "todo",
+    "to-do"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManishTirkey/Todo-Application.git/issues"
+  },
+  "homepage": "https://github.com/ManishTirkey/Todo-Application#readme",
   "devDependencies": {
     "electron": "^30.0.0",
     "electron-builder": "^24.9.1"
@@ -20,7 +30,18 @@
     "auto-launch": "^5.0.6",
     "electron-store": "^8.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManishTirkey/Todo-Application.git"
+  },
   "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ManishTirkey",
+        "repo": "Todo-Application"
+      }
+    ],
     "appId": "com.electron.todo-app",
     "productName": "Todo App",
     "copyright": "copyright  © 2025 by Manish Tirkey ",
